@@ -1,0 +1,87 @@
+.container{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav "
+    "about about contact"
+    "about about contact"
+    "about about contact"
+    "about about contact"
+    
+    ;
+    overflow:hidden;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+.nav{
+    grid-area: nav;
+    width:100%;
+    height: 40px;
+    
+    background-color: rgb(218, 150, 250);
+}
+.nav li{
+    display: inline-block;
+    padding:5px;
+    text-transform: uppercase;
+    text-decoration: rgb(46, 40, 134);
+}
+.nav li a{
+    transition: .2s;
+    color: turquoise;
+}
+.nav li a:hover{
+    color: indigo;
+
+}
+.about{
+    grid-area: about;
+    height:auto;
+    width:auto;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(235, 220, 252);
+}
+.about img{
+    height: auto;
+    width: 25%;
+    border-radius: 20%;
+}
+.me{
+    background-color: rgb(213, 198, 248);
+    font-style: oblique;
+}
+.hobbies{
+    background-color: rgb(213, 198, 248);
+    font-style: oblique;
+
+}
+.here{
+    background-color: rgb(213, 198, 248);
+    font-style: oblique;
+}
+.container > div{
+    
+    border: 1px solid rgba(109, 109, 117, 0.034);
+    padding: 10px;
+}
+.contact{
+    background-color: mistyrose;
+}
+.contact img{
+    height: auto;
+    width:100%;
+}
+.form{
+    border: thin solid rgb(55, 167, 241);
+    background-color:lemonchiffon
+}
+.friends{
+    text-shadow: mediumblue;
+    font-style: inherit;
+}
+.friends{
+
+    background-color: rgba(177, 247, 243, 0.829);
+}
